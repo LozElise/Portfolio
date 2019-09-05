@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<title>Lauren Fell</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://lozelise.github.io/Portfolio/Me.png" style="width:70%;" class="w3-round"><br><br>
+    <h4><b>LAUREN FELL</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="https://lozelise.github.io/Portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>HOME</a> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button"><i class="fa fa-pie-chart fa-fw w3-margin-right"></i>RESEARCH & TEACHING 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <a href="https://lozelise.github.io/Portfolio/research" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw w3-margin-right"></i>RESEARCH</a> 
+    <a href="https://lozelise.github.io/Portfolio/publications" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file-o fa-fw w3-margin-right"></i>PUBLICATIONS</a> 
+    <a href="https://lozelise.github.io/Portfolio/research/#teaching" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-university fa-fw w3-margin-right"></i>TEACHING</a> 
+  </div>
+    </div>
+    <a href="https://lozelise.github.io/Portfolio/uxconsult" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw w3-margin-right"></i>UX CONSULTING</a> 
+    <a href="https://psytassist.com" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-laptop fa-fw w3-margin-right"></i>PSYTASSIST</a> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button"><i class="fa fa-plus fa-fw w3-margin-right"></i>OTHER PROJECTS 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+    <a href="https://lozelise.github.io/Portfolio/design" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paint-brush fa-fw w3-margin-right"></i>DESIGN</a> 
+    <a href="https://lozelise.github.io/Portfolio/andy" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-microchip fa-fw w3-margin-right"></i>ANDY</a> 
+    <a href="https://lozelise.github.io/Portfolio/volunteering" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-handshake-o fa-fw w3-margin-right"></i>VOLUNTEERING</a> 
+  </div>
+    </div>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <a href="https://www.linkedin.com/in/lauren-fell"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    <a href="https://scholar.google.com.au/citations?user=0gMAFTcAAAAJ&hl=en"><i class="fa fa-google w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/andytheanatomybot/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="url"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="UX Consulting">
+    <a href="#"><img src="LaurenCircle.png" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>UX Consulting</b></h1>
+    </div>
+  </header>
+
+<div class="container">
+  <img src="https://lozelise.github.io/Portfolio/Chimborazo.jpg" alt="Mountain" style="width:100%;">
+  <div class="centered"><h1>Coming soon</h1>
+  <h4>If you have any questions about the anticipated contents of this page, please contact me below</h4>
+  </div>
+</div>
+
+<!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="contact"><b>Contact Me</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>lauren.elise.f@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Brisbane, Australia</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>(+614)104 53 104</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3>MEDIA</h3>
+      <ul class="w3-ul w3-hoverable">
+        <a href="https://www.qut.edu.au/science-engineering/about/news?id=149768"><li class="w3-padding-16">
+          <img src="https://lozelise.github.io/Portfolio/Andy.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Andy the Anatomy Bot at Robotronica</span><br>
+          <span>Andy the Anatomy bot visiting Robotronica, where Andy and I taught about Pneumatic Artificial Muscles and how to make them</span>
+           </li></a>
+        <a href="https://www.abc.net.au/7.30/australias-gig-economy.-is-work-on-demand-the-new/10103320"><li class="w3-padding-16">
+          <img src="https://lozelise.github.io/Portfolio/GigEconomy.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">7:30 Report - Gig Economy</span><br>
+          <span>Speaking about working and using Freelancer.com as a 'side gig'</span>
+          </li></a>
+      </ul>
+    </div>
+  
+    <div class="w3-third">
+      <h3>__________________</h3>
+      <ul class="w3-ul w3-hoverable">
+       <a href="https://commswork.com.au/cut-the-cliches-episode-11-psychology-of-choice-lauren-fell"> <li class="w3-padding-16">
+          <img src="https://lozelise.github.io/Portfolio/PsychofChoice.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Cut the Cliches Podcast</span><br>
+          <span>Invited as a guest to speak about the psychology of choice</span>
+         </li></a>
+       <a href="https://twitter.com/freelancer/status/910322942113959936"><li class="w3-padding-16">
+          <img src="https://lozelise.github.io/Portfolio/NASAcontest.png" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Winning a NASA contest</span><br>
+          <span>Chatting about my experience winning my first contest with NASA</span>
+           </li></a>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">PSYCHOLOGY</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Quantum Cognition</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Technology</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Innovation</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Experimentation</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">DESIGN</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">RESEARCH</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Autism</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Trust</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Palaeontology</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">ROBOTICS</span>
+        <span class="w3-tag w3-grey w3-small w3-margin-bottom">Faces</span> <span class="w3-tag w3-grey w3-small w3-margin-bottom">Social Perception</span>
+      </p>
+    </div>
+
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">If you have any questions about the content of this page, please contact me below</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+</div>
+
+</body>
+</html>
